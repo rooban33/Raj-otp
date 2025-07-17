@@ -25,6 +25,7 @@ const OTPFlow = ({
 
   // Use custom theme if provided, otherwise use default themes
   const currentTheme = customTheme || (isDarkTheme ? darkTheme : lightTheme);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,6 +37,8 @@ const OTPFlow = ({
         setIsLoading(false);
         return;
       }
+
+
 
       try {
         setIsLoading(true);
@@ -226,6 +229,7 @@ const OTPFlow = ({
           theme={currentTheme}
           isDark={isDarkTheme}
           type1={otpType}
+          onReset={fetchOTPConfig}
           onToggleTheme={toggleTheme}
         />
       )}
