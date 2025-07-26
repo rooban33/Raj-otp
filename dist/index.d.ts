@@ -1,13 +1,13 @@
-declare function OTPFlow({ secretKey, apiEndpoint, onError, onSuccess, onComplete, initialTheme, customTheme, containerStyle, ...props }: {
+declare function OTPFlow({ secretKey, apiEndpoint, onError, onSuccess, initialTheme, customTheme, containerStyle, phoneNumber, ...props }: {
     [x: string]: any;
     secretKey: any;
     apiEndpoint?: string | undefined;
     onError: any;
     onSuccess: any;
-    onComplete: any;
     initialTheme?: string | undefined;
     customTheme: any;
     containerStyle?: {} | undefined;
+    phoneNumber?: string | undefined;
 }): any;
 
 export { OTPFlow as default };

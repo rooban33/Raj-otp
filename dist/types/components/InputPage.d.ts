@@ -1,6 +1,8 @@
 export default InputPage;
-declare function InputPage({ onSubmit, theme, isDark, type1 }: {
+declare function InputPage({ onSubmit, phoneNumber, onReset, theme, isDark, type1 }: {
     onSubmit?: (() => void) | undefined;
+    phoneNumber: any;
+    onReset?: (() => void) | undefined;
     theme?: {
         primary: string;
         primaryDark: string;
